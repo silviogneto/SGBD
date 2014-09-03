@@ -1,0 +1,33 @@
+﻿<Window x:Name="mainWindow" x:Class="SGBDBufferUsage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="320" Width="600" Closing="mainWindow_Closing" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="30*"/>
+			<ColumnDefinition Width="50*"/>
+		</Grid.ColumnDefinitions>
+
+        <Label Content="Algoritmo de Subst. de Páginas" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="202" IsHitTestVisible="False"/>
+        <ComboBox x:Name="comboAlgoritmo" Margin="10,45,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="202" SelectionChanged="comboAlgoritmo_SelectionChanged">
+            <ComboBoxItem Selector.IsSelected="True" Content="LRU"/>
+            <ComboBoxItem Content="MRU"/>
+        </ComboBox>
+        <Button x:Name="btnIniciarAlteracoes" Content="Carregar Páginas Automático" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="202" Click="btnIniciarAlteracoes_Click"/>
+        <Button x:Name="btnPausarAlteracoes" Content="Parar" HorizontalAlignment="Left" Margin="10,124,0,0" VerticalAlignment="Top" Width="202" Click="btnPausarAlteracoes_Click" Visibility="Hidden"/>
+        <StackPanel Grid.Column="1" Margin="10,10,14,10">
+            <StackPanel Height="34" Orientation="Horizontal">
+                <Label Content="Página Solicitada:" HorizontalAlignment="Left"/>
+                <Label x:Name="lblPagina" Content="" Width="103"/>
+            </StackPanel>
+            <GroupBox Header="Páginas na Memória" Margin="5" Height="232">
+                <ScrollViewer Grid.Column="1" Margin="5
+                              " IsEnabled="False">
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <TextBlock x:Name="txtPaginas" TextWrapping="Wrap"/>
+                    </Border>
+                </ScrollViewer>
+            </GroupBox>
+        </StackPanel>
+
+    </Grid>
+</Window>

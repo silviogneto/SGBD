@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGBDBuffer", "SGBDBuffer\SGBDBuffer.csproj", "{C8B86F43-3BB3-475A-B2EE-74423695A088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGBDBufferUsage", "SGBDBufferUsage\SGBDBufferUsage.csproj", "{BEAEEB62-3130-4849-9514-00E9353646A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGBDBufferConsole", "SGBDBufferConsole\SGBDBufferConsole.csproj", "{02435DA2-7D50-48D0-9F14-9A2B32694B0A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8B86F43-3BB3-475A-B2EE-74423695A088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B86F43-3BB3-475A-B2EE-74423695A088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B86F43-3BB3-475A-B2EE-74423695A088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B86F43-3BB3-475A-B2EE-74423695A088}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEAEEB62-3130-4849-9514-00E9353646A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEAEEB62-3130-4849-9514-00E9353646A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEAEEB62-3130-4849-9514-00E9353646A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEAEEB62-3130-4849-9514-00E9353646A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02435DA2-7D50-48D0-9F14-9A2B32694B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02435DA2-7D50-48D0-9F14-9A2B32694B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02435DA2-7D50-48D0-9F14-9A2B32694B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02435DA2-7D50-48D0-9F14-9A2B32694B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
